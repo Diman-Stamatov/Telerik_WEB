@@ -10,24 +10,36 @@
 -- 5. Find all different employee salaries.
 --SELECT DISTINCT Salary FROM Employees;
 -- 6. Find all information about the employees whose job title is "Sales Representative" or "Sales Manager".
-SELECT * FROM Employees;
+--SELECT * FROM Employees
+--WHERE JobTitle = 'Sales Representative' OR JobTitle ='Sales Manager';
 
 -- 7. Find the names of all employees whose first name starts with "SA".
-
+--SELECT CONCAT_WS(' ', FirstName, MiddleName, LastName) AS FullName FROM Employees
+--WHERE FirstName LIKE 'Sa%';
 -- 8. Find the names of all employees whose last name contains "ei".
-
+--SELECT Concat_WS(' ', FirstName, MiddleName, LastName) AS FullName FROM Employees
+--WHERE LastName LIKE '%ei%';
 -- 9. Find the salary of all employees whose salary is in the range [20000…30000].
-
+--SELECT Salary FROM Employees
+--WHERE Salary < 30000 AND Salary > 20000
+--ORDER BY Salary;
 -- 10. Find the names of all employees whose salary is 25000, 14000, 12500 or 23600.
-
+--SELECT CONCAT_WS(' ', FirstName, MiddleName, LastName) AS FullName, Salary FROM Employees
+--WHERE Salary = 25000 OR Salary = 14000 OR Salary = 12500 OR Salary = 23600
+--ORDER BY Salary;
 -- 11. Find all employees that do not have manager.
-
+--SELECT * FROM Employees
+--WHERE ManagerID IS NULL;
 -- 12. Find all employees that have salary more than 50000. Order them in decreasing order by salary.
-
+--SELECT * FROM Employees
+--WHERE Salary > 50000
+--ORDER BY SALARY DESC;
 -- 13. Find the top 5 best paid employees.
-
+--SELECT TOP 5 * FROM Employees
+--ORDER BY Salary DESC;
 -- 14. Find all employees along with their address. Use inner join with ON clause.
-
+--SELECT CONCAT_WS(' ', FirstName, MiddleName, LastName) AS FullName, AddressText AS Address FROM Employees
+--INNER JOIN Addresses ON Employees.AddressID = Addresses.AddressID;
 -- 15. Find all employees and their address. Use equijoins (conditions in the WHERE clause).
 
 -- 16. Find all employees along with their manager.
