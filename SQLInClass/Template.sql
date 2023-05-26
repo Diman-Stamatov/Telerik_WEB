@@ -41,15 +41,30 @@
 --SELECT CONCAT_WS(' ', FirstName, MiddleName, LastName) AS FullName, AddressText AS Address FROM Employees
 --INNER JOIN Addresses ON Employees.AddressID = Addresses.AddressID;
 -- 15. Find all employees and their address. Use equijoins (conditions in the WHERE clause).
-
+--SELECT FirstName, LastName, AddressText FROM Employees, Addresses
+--WHERE Employees.AddressID = Addresses.AddressID;
 -- 16. Find all employees along with their manager.
-
+--SELECT * FROM Employees;
+--SELECT CONCAT_WS(' ', Employees.FirstName ,Employees.MiddleName ,Employees.LastName) AS FullName, 
+--CONCAT_WS(' ', Managers.FirstName ,Managers.MiddleName ,Managers.LastName) AS ManagerName FROM Employees 
+--INNER JOIN Employees as Managers on Employees.ManagerID = Managers.EmployeeID
+--ORDER BY Employees.EmployeeID;
+ 
 -- 17. Find all employees, along with their manager's address. 
 --       Hint: Join Employees AS e, Employees AS m and Addresses.
-
+--SELECT * FROM Employees
+--INNER JOIN Addresses ON Employees.AddressID = Addresses.AddressID
+--ORDER BY EmployeeID;
+--SELECT CONCAT_WS(' ', Employees.FirstName, Employees.MiddleName, Employees.LastName) AS FullName, 
+--AddressText as ManagerAddress FROM Employees
+--INNER JOIN Employees AS Managers ON Employees.ManagerID = Managers.EmployeeID
+--INNER JOIN Addresses ON Managers.AddressID = Addresses.ADDRESSID
+--;
 -- 18. Find all departments and all town names as a single list. 
 --       Hint: Use UNION (https://www.w3schools.com/sql/sql_union.asp)
-
+--SELECT Name FROM Departments
+--UNION
+--SELECT Name FROM Towns
 -- 19. Write a SQL query that lists the name of each employee along with the name of their manager.
 --       Hint: Use RIGHT OUTER JOIN (https://www.w3schools.com/sql/sql_join_right.asp). Rewrite the query using LEFT OUTER JOIN.
 --             The expected result after using RIGHT OUTER JOIN is shown below.
