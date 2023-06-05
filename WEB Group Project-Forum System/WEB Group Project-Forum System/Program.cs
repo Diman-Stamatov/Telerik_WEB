@@ -1,3 +1,5 @@
+using WEB_Group_Project_Forum_System.Models;
+
 namespace WEB_Group_Project_Forum_System
 {
     public class Program
@@ -10,6 +12,8 @@ namespace WEB_Group_Project_Forum_System
             app.MapGet("/", () => "Hello World!");
 
             app.Run();
+            
+            
         }
     }
 }
