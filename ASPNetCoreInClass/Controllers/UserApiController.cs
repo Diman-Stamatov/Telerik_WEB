@@ -56,6 +56,7 @@ namespace ASPNetCoreInClass.Controllers
             {
                 foundUser.Name = name;
                 foundUser.Email = email;
+                
             }
             return StatusCode(StatusCodes.Status202Accepted, foundUser);
         }

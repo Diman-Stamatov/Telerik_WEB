@@ -1,0 +1,14 @@
+﻿{
+  
+  "profiles": {
+    "WEB_Group_Project_Forum_System": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "launchBrowser": flase,
+      "applicationUrl": "http://localhost:5081",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    }
+  }
+}
