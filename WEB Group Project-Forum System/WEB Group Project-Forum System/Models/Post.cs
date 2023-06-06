@@ -2,14 +2,15 @@
 {
     public class Post
     {
-        int PostId;
-        int? ParentPostId;
-        DateTime CreationDate;
-        int AuthorId;
-        string Title;
-        string Content;
-        List<int> Replies;
-        List<int> Tags;
-
+        public int PostId { get; set; }
+        public int? ParentPostId { get; set; }
+        string Title { get; set; }
+        public DateTime CreationDate { get; set; }
+        int AuthorId { get; set; }
+        public string Content { get; set; }
+        public List<int> Replies { get; set; }
+        public List<int> Tags { get; set; }
+        public int Likes { get; set; }
+        public int Dislikes { get; set; }
     }
 }

@@ -2,6 +2,6 @@
 {
     public class Admin : User
     {
-        int PhoneNumber;
+        public int PhoneNumber { get; set; }
     }
 }
