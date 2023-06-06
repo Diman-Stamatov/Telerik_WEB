@@ -4,7 +4,7 @@
     {
         public int PostId { get; set; }
         public int? ParentPostId { get; set; }
-        string Title { get; set; }
+        public string Title { get; set; }
         public DateTime CreationDate { get; set; }
         int AuthorId { get; set; }
         public string Content { get; set; }
