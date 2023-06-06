@@ -7,4 +7,8 @@
     <RootNamespace>WEB_Group_Project_Forum_System</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Models\Interfaces\" />
+  </ItemGroup>
+
 </Project>

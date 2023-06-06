@@ -6,7 +6,7 @@
         public int? ParentPostId { get; set; }
         public string Title { get; set; }
         public DateTime CreationDate { get; set; }
-        int AuthorId { get; set; }
+        public int AuthorId { get; set; }
         public string Content { get; set; }
         public List<int> Replies { get; set; }
         public List<int> Tags { get; set; }
