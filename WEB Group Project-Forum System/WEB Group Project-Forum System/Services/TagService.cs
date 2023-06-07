@@ -1,39 +1,43 @@
 ﻿using ForumSystemTeamFour.Models;
+using WEB_Group_Project_Forum_System.Models;
 using WEB_Group_Project_Forum_System.Models.QueryParameters;
+using WEB_Group_Project_Forum_System.Repositories;
 using WEB_Group_Project_Forum_System.Services.Interfaces;
 
 namespace WEB_Group_Project_Forum_System.Services
 {
     public class TagService : ITagService
     {
-        public Post Create(string name)
+        private readonly TagsRepository tagsRepository;
+        public TagService(TagsRepository tagsRepository)
         {
-            throw new NotImplementedException();
+            this.tagsRepository = tagsRepository;
         }
 
-        public Post Delete(string name)
+        public Tag Create(string name)
         {
-            throw new NotImplementedException();
+            return this.tagsRepository.Create(name);
+           
         }
 
-        public List<Post> FilterBy(ReplyQueryParameters filterParameters)
-        {
-            throw new NotImplementedException();
+        public Tag Delete(string name)
+        {            
+            return this.tagsRepository.Delete(name); 
         }
 
-        public List<Post> GetAll()
+        public List<Tag> GetAll()
         {
-            throw new NotImplementedException();
+            return this.tagsRepository.GetAll();
         }
 
-        public Post GetById(int id)
+        public Tag GetById(int id)
         {
-            throw new NotImplementedException();
+            return this.tagsRepository.GetById(id);
         }
 
-        public Post Update(int id, string name)
+        public Tag Update(int id, string name)
         {
-            throw new NotImplementedException();
+            return tagsRepository.Update(id, name);
         }
     }
 }

@@ -32,7 +32,7 @@ namespace WEB_Group_Project_Forum_System.Repositories
                 this.tags.Add(newTag);
                 return newTag;
 
-        }
+            }
             throw new InvalidOperationException($"The tag \"{name}\" already exists!");
         }
         public Tag GetByName(string name)
