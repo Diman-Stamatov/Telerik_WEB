@@ -1,9 +1,14 @@
-﻿using WEB_Group_Project_Forum_System.Models;
+﻿using ForumSystemTeamFour.Models;
+using WEB_Group_Project_Forum_System.Models.DTOs;
+using WEB_Group_Project_Forum_System.Models.QueryParameters;
+using WEB_Group_Project_Forum_System.Repositories.Interfaces;
 
 namespace WEB_Group_Project_Forum_System.Repositories
 {
-    public class PostsRepository : IPostsRepository
+    public class RepliesRepository : IRepliesRepository
     {
+        private readonly List<Reply> replies;
+        
         public Post Create(PostDto postDto)
         {
             throw new NotImplementedException();
@@ -14,7 +19,7 @@ namespace WEB_Group_Project_Forum_System.Repositories
             throw new NotImplementedException();
         }
 
-        public List<Post> FilterBy(PostQueryParameters filterParameters)
+        public List<Post> FilterBy(ReplyQueryParameters filterParameters)
         {
             throw new NotImplementedException();
         }
