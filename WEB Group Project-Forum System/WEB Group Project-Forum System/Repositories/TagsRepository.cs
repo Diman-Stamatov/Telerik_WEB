@@ -32,7 +32,7 @@ namespace WEB_Group_Project_Forum_System.Repositories
                 this.tags.Add(newTag);
                 return newTag;
 
-            }            
+        }
             throw new InvalidOperationException($"The tag \"{name}\" already exists!");
         }
         public Tag GetByName(string name)
@@ -47,17 +47,17 @@ namespace WEB_Group_Project_Forum_System.Repositories
             if (foundTag == null)
             {
                 throw new InvalidOperationException($"The tag \"{name}\" does not exist!");
-            }
+        }
 
             this.tags.Remove(foundTag);
             return foundTag;
         }
-                
+
 
         public List<Tag> GetAll()
         {
             if (this.tags.Count ==0)
-            {
+        {
                 throw new InvalidOperationException("No tags have been created yet!");
             }
             return this.tags;
@@ -82,7 +82,7 @@ namespace WEB_Group_Project_Forum_System.Repositories
                 Console.WriteLine($"Id:{item.Id}, Name:{item.Name})");
             }
         }
-
         
-    }
+        
+}
 }
