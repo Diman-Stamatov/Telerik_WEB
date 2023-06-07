@@ -1,9 +1,9 @@
-﻿namespace WEB_Group_Project_Forum_System.Models
+﻿namespace WEB_Group_Project_Forum_System.Models.QueryParameters
 {
-    public class PostQueryParameters
+    public class ReplyQueryParameters
     {
-        public string Title { get; set; }
-        public List<int> Tags { get; set; }
+        public string Author { get; set; }
+
         public DateTime? MinDate { get; set; }
         public DateTime? MaxDate { get; set; }
         public string SortBy { get; set; }

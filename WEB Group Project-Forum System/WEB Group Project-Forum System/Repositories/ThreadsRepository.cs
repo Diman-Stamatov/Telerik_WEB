@@ -1,17 +1,18 @@
 ﻿using ForumSystemTeamFour.Models;
+using WEB_Group_Project_Forum_System.Models.DTOs;
 using WEB_Group_Project_Forum_System.Models.QueryParameters;
-using WEB_Group_Project_Forum_System.Services.Interfaces;
+using WEB_Group_Project_Forum_System.Repositories.Interfaces;
 
-namespace WEB_Group_Project_Forum_System.Services
+namespace WEB_Group_Project_Forum_System.Repositories
 {
-    public class TagService : ITagService
+    public class ThreadsRepository : IThreadsRepository
     {
-        public Post Create(string name)
+        public Post Create(PostDto postDto)
         {
             throw new NotImplementedException();
         }
 
-        public Post Delete(string name)
+        public Post Delete(int id)
         {
             throw new NotImplementedException();
         }
@@ -31,7 +32,7 @@ namespace WEB_Group_Project_Forum_System.Services
             throw new NotImplementedException();
         }
 
-        public Post Update(int id, string name)
+        public Post Update(int id, PostDto postDto)
         {
             throw new NotImplementedException();
         }

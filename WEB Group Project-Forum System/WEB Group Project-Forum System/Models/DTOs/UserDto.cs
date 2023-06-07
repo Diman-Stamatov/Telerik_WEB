@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace WEB_Group_Project_Forum_System.Models
+namespace WEB_Group_Project_Forum_System.Models.DTOs
 {
     public class UserDto
     {
@@ -31,6 +31,6 @@ namespace WEB_Group_Project_Forum_System.Models
         [MinLength(10, ErrorMessage = StringMinLengthMessage)]
         [MaxLength(40, ErrorMessage = StringMaxLengthMessage)]
         public string Password { get; set; }
-        public bool? Blocked { get; set; }
+        
     }
 }
