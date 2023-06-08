@@ -1,6 +1,8 @@
-﻿namespace WEB_Group_Project_Forum_System.Models
+﻿using ForumSystemTeamFour.Models.Interfaces;
+
+namespace WEB_Group_Project_Forum_System.Models
 {
-    public class User
+    public class User : IUser
     {
         public int UserID { get; set; }
         public bool IsAdmin { get; set; }

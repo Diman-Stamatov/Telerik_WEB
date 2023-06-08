@@ -1,6 +1,7 @@
 using System.Data;
 using System.Globalization;
 using WEB_Group_Project_Forum_System.Models;
+using WEB_Group_Project_Forum_System.Repositories;
 
 namespace WEB_Group_Project_Forum_System
 {
@@ -8,16 +9,17 @@ namespace WEB_Group_Project_Forum_System
     {
         public static void Main(string[] args)
         {
-            
-            var date = DateTime.Now.ToShortDateString();
-            Console.WriteLine(date);
+
+            var repository = new TagsRepository();
+            repository.Print();
+
             var builder = WebApplication.CreateBuilder(args);
             var app = builder.Build();
 
             app.MapGet("/", () => "Hello World!");
 
             app.Run();
-            
+
             
         }
     }

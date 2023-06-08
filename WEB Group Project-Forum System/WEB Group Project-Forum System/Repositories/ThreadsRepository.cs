@@ -5,9 +5,9 @@ using WEB_Group_Project_Forum_System.Repositories.Interfaces;
 
 namespace WEB_Group_Project_Forum_System.Repositories
 {
-    public class UsersRepository : IUsersRepository
+    public class ThreadsRepository : IThreadsRepository
     {
-        public Post Create(UserDto userDto)
+        public Post Create(PostDto postDto)
         {
             throw new NotImplementedException();
         }
@@ -17,7 +17,7 @@ namespace WEB_Group_Project_Forum_System.Repositories
             throw new NotImplementedException();
         }
 
-        public List<Post> FilterBy(UserQueryParameters filterParameters)
+        public List<Post> FilterBy(ReplyQueryParameters filterParameters)
         {
             throw new NotImplementedException();
         }
@@ -32,7 +32,7 @@ namespace WEB_Group_Project_Forum_System.Repositories
             throw new NotImplementedException();
         }
 
-        public Post Update(int id, UserDto userDto)
+        public Post Update(int id, PostDto postDto)
         {
             throw new NotImplementedException();
         }
