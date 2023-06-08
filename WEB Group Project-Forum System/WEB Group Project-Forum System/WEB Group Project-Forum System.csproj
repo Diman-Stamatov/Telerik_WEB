@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
-    <Nullable>enable</Nullable>
+    
     <ImplicitUsings>enable</ImplicitUsings>
     <RootNamespace>WEB_Group_Project_Forum_System</RootNamespace>
   </PropertyGroup>
