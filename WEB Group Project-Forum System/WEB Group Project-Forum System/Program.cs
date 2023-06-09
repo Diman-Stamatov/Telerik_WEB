@@ -1,3 +1,4 @@
+using ForumSystemTeamFour.Repositories;
 using System.Data;
 using System.Globalization;
 using WEB_Group_Project_Forum_System.Models;
@@ -10,8 +11,8 @@ namespace WEB_Group_Project_Forum_System
         public static void Main(string[] args)
         {
 
-            var repository = new TagsRepository();
-            repository.Print();
+            
+            
 
             var builder = WebApplication.CreateBuilder(args);
             var app = builder.Build();

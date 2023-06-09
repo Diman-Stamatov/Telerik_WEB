@@ -1,10 +1,9 @@
-﻿
-using ForumSystemTeamFour.Models;
+﻿using ForumSystemTeamFour.Models;
 using WEB_Group_Project_Forum_System.Models;
 
-namespace ForumSystemTeamFour.Repositories.Interfaces
+namespace ForumSystemTeamFour.Services.Interfaces
 {
-    public interface ITagsRepository
+    public interface ITagServices
     {
         List<Tag> GetAll();
         Tag GetById(int id);

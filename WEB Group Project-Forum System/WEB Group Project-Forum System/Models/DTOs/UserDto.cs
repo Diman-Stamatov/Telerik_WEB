@@ -4,7 +4,7 @@ namespace WEB_Group_Project_Forum_System.Models.DTOs
 {
     public class UserDto
     {
-        private const string StringEmptyMessage = "Please specify a {0}!";
+        private const string StringEmptyMessage = "Please specify a valid {0}!";
         private const string StringMinLengthMessage = "The {0} must be at least {1} characters long!";
         private const string StringMaxLengthMessage = "The {0} must be at most {1} characters long!";
 
@@ -31,6 +31,6 @@ namespace WEB_Group_Project_Forum_System.Models.DTOs
         [MinLength(10, ErrorMessage = StringMinLengthMessage)]
         [MaxLength(40, ErrorMessage = StringMaxLengthMessage)]
         public string Password { get; set; }
-        
+
     }
 }
