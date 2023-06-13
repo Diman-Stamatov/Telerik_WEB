@@ -1,0 +1,13 @@
+{
+  "profiles": {
+    "ForumSystemTeamFour": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "dotnetRunMessages": true,
+      "applicationUrl": "http://localhost:5107",
+      "sqlDebugging": true
+    }
+  }
+}
